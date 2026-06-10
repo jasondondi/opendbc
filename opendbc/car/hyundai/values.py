@@ -465,6 +465,11 @@ class CAR(Platforms):
     [HyundaiCarDocs("Kia Niro Hybrid 2023-24", car_parts=CarParts.common([CarHarness.hyundai_a]))],
     KIA_NIRO_EV.specs,
   )
+  KIA_NIRO_HEV_2026 = HyundaiCanFDPlatformConfig(
+    [HyundaiCarDocs("Kia Niro Hybrid 2026", car_parts=CarParts.common([CarHarness.hyundai_a]))],
+    KIA_NIRO_EV.specs,
+    flags=HyundaiFlags.HYBRID,
+  )
   KIA_OPTIMA_G4 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Kia Optima 2017", "Advanced Smart Cruise Control",
                     car_parts=CarParts.common([CarHarness.hyundai_b]))],  # TODO: may support 2016, 2018
